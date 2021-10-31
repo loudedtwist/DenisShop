@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: IgraSans;
-    src: url('fonts/IgraSans.otf');
+    src: url(/fonts/IgraSans.otf);
 }
 
 
@@ -20,6 +20,7 @@ html {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto 3rem 2fr auto;
     grid-gap: 1rem;
+    grid-row-gap: 2rem;
 }
 
 .layout>div {
@@ -50,7 +51,7 @@ html {
     display: inline-block;
     min-height: 7rem;
     background-color: darkgoldenrod;
-    background: url(images/Logo.svg);
+    background: url(/images/Logo.svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -91,22 +92,23 @@ html {
 /* Hero */
 
 .hero {
-    background: url(images/undraw_Together_re_a8x4.svg);
+    background: url(/images/undraw_Together_re_a8x4.svg);
     background-position: left;
     background-size: 30% 80%;
     background-repeat: no-repeat;
-    padding: 4em 8vw;
+    padding: 4em 2vw;
     text-align: right;
 }
 
 
 /* Catalogs */
 
-.catalog-chemicals {
+.catalog-chemicals,
+.catalog-fertilizers {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem)); */
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-rows: subgrid;
     justify-content: center;
     align-content: center;
@@ -117,7 +119,7 @@ html {
 
 .card {
     background: white;
-    border-radius: 6px;
+    border-radius: 0.37509rem;
     box-shadow: 0px 2px 8px 1px rgb(133, 133, 133, 0.3);
     height: 100%;
 }
@@ -129,8 +131,9 @@ html {
 }
 
 .card>.image {
-    height: 15rem;
+    height: 10rem;
     background-size: cover;
+    border-radius: 0.37509rem 0.37509rem 0rem 0rem;
 }
 
 .card>.container {
@@ -138,7 +141,7 @@ html {
 }
 
 .feature-point {
-    margin-top: 2rem;
+    margin-top: 4rem;
     /* background-color: royalblue; */
     /* color: whitesmoke; */
     padding: 0.5rem;
@@ -152,22 +155,21 @@ html {
     height: 4rem;
     margin-top: 0rem;
     margin-left: -5rem;
-    background: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj3XfIpf-OOJRCcWz4iN2CU3qMKVVbj0p0bRvKNGVo1U9pk_8ZIlyR8pWreA');
     background-size: cover;
 }
 
 #feature-point1:before {
-    background: url(images/point-industry.png);
+    background: url(/images/point-industry.png);
     background-size: cover;
 }
 
 #feature-point2:before {
-    background: url(images/point-timing.png);
+    background: url(/images/point-timing.png);
     background-size: cover;
 }
 
 #feature-point3:before {
-    background: url(images/point-delivary.png);
+    background: url(/images/point-delivary.png);
     background-size: cover;
 }
 
@@ -183,10 +185,52 @@ html {
     grid-column: 4 / 5;
 }
 
+.about-the-company {
+    margin-top: 2rem;
+}
+
+
+/* Contact | map and contact information ____________________________________ */
+
+.contact {
+    margin-top: 0rem;
+}
+
+.contact>p {
+    margin: 0rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: rgb(83, 83, 83);
+}
+
+.contact.map {
+    margin-top: 4rem;
+}
+
+.contact.address {
+    grid-column: 2 / 3;
+}
+
+.contact.phone {
+    grid-column: 3 / 4;
+}
+
+.contact.internet {
+    grid-column: 4 / 5;
+}
+
+.footer {
+    padding: 3rem;
+    grid-column: 1/6;
+}
+
 
 /* Different screens layouting */
 
 @media only screen and (max-width: 900px) {
+    .layout {
+        padding: 2rem;
+    }
     .header,
     .navigation,
     .hero,
@@ -195,6 +239,9 @@ html {
     .about-the-company,
     .contact {
         grid-column: 1 / 6;
+    }
+    .feature-point {
+        margin-top: 2rem;
     }
     #feature-point1 {
         grid-column: 1 / 6;

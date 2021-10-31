@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заголовок сайта</title>
+    <script type="text/javascript" src="/scripts/overlay.js"></script>
     <script type="text/javascript" src="chemicals.js"></script>
+    <script type="text/javascript" src="fertilizers.js"></script>
     <script type="text/javascript" src="base.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/overlay.css">
 </head>
 
 
@@ -35,11 +38,11 @@
         </div>
         <div class="navigation" id="navigation">
             <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#chemicals">Chemicals</a></li>
-                <li><a href="#fertilizers">Fertilizers</a></li>
-                <li><a href="#about-the-company">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#header">Home</a></li> -->
+                <!-- <li><a href="#chemicals">Chemicals</a></li> -->
+                <!-- <li><a href="#fertilizers">Fertilizers</a></li> -->
+                <!-- <li><a href="#about-the-company">About</a></li> -->
+                <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </div>
         <div class="hero" id="hero">
@@ -53,13 +56,7 @@
 
         <div class="fertilizers" id="fertilizers">
             <h2>Удобрения</h2>
-            <div class="catalog-fertilizers">
-                <div class="card">1</div>
-                <div class="card">2</div>
-                <div class="card">3</div>
-                <div class="card">4</div>
-                <div class="card">5</div>
-                <div class="card">6</div>
+            <div class="catalog-fertilizers" id="catalog-fertilizers">
             </div>
         </div>
 
@@ -73,9 +70,39 @@
                 вагонные и контейнерные вкладыши, а также другие сопутствующие товары. Мы предоставляем для наших клиентов широкий выбор мягких контейнеров различных размеров и конструкций для перевозки и хранения. Кроме того, по индивидуальному заказу
                 мы можем изготовить мягкие контейнеры (мешки, биг-бэги) под Ваш тип продукта.</div>
         </div>
-        <div class="contact" id="contact">
-            <div class="map">карта</div>
-            <div class="data">данные</div>
+        <div class="contact map">
+            <h2>Контакты</h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A573976687112502ec2cab692f2bbc3c3435976924af8623bccce3c3be3be0268&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+        <div class="contact address">
+            <p>Россия, Брянская област</p>
+            <p>Улица улица 21</p>
+            <p>243500 Сураж</p>
+        </div>
+        <div class="contact phone">
+            <p>Тел.: 8 (0ХХХ) 00-00-00</p>
+            <p>Тел.: 8 (0Х1Х) 14-51-34</p>
+            <p>Вайбер.: 8 (0Х1Х) 14-51-35</p>
+        </div>
+        <div class="contact internet">
+            <p>Почта: email@host.ru</p>
+            <p>Маркет: shop.yandex.ru</p>
+            <p>ВК: shop.vk.ru</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+    </div>
+    <div class="overlay" id="myNav">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="overlay-product-image"></div>
+            <h1 id="overlay-product-name">Name of the product</h1>
+            <p id="overlay-product-description">АКТАРА, ВДГ — инсектицид кишечно-контактного действия, предназначен для защиты: картофеля — от проволочника и наземных вредителей; капусты — от капустной мухи; гороха — от тли, зерновки; овощных и цветочных культур закрытого и открытого грунта
+                — от тли, белокрылки, трипсов, щитовок и ложнощитовок; винограда и яблони — от медяниц, цикадок, цветоеда. Инсектицид применяют как для опрыскивания растений в период вегетации, так и для внесения в почву. При внесении в почву обладает
+                выраженной системной активностью.\nПреимущества препарата\n• Сохранение листового аппарата, улучшение качества продукции.\n• Низкая норма расхода, снижение числа обработок.\n• Эффективность независимо от внешних условий (сохраняет активность
+                при высоких температурах, низкой влажности, устойчив к инсоляции, дождеустойчив).\n• Длительный защитный эффект.\n• Широкий спектр активности.\n• Трансламинарное действие при опрыскивании растений.\n• Системное действие при внесении в
+                почву.\n• Быстрое ингибирование питания насекомых.\n• Эффективность против скрытноживущих и питающихся на нижней стороне листа насекомых</p>
         </div>
     </div>
 </body>
