@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: IgraSans;
-    src: url("/fonts/IgraSans.otf");
+    src: url("../fonts/IgraSans.otf");
 }
 
 
@@ -51,7 +51,7 @@ html {
     display: inline-block;
     min-height: 7rem;
     background-color: darkgoldenrod;
-    background: url("/images/Logo.svg");
+    background: url("../images/Logo.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
