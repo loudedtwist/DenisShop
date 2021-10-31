@@ -1,0 +1,210 @@
+/* Fonts */
+
+@font-face {
+    font-family: IgraSans;
+    src: url('fonts/IgraSans.otf');
+}
+
+
+/* HTML */
+
+html {
+    font-family: IgraSans;
+}
+
+
+/* Layout */
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 3rem 2fr auto;
+    grid-gap: 1rem;
+}
+
+.layout>div {
+    /* background-color: rgb(240, 240, 240); */
+    border-radius: 4px;
+}
+
+.header,
+.navigation,
+.hero,
+.chemicals,
+.fertilizers,
+.about-the-company,
+.contact {
+    grid-column: 2 / 5;
+}
+
+
+/* Header */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    /* grid-template-columns: 2fr 1fr; */
+}
+
+.header>.logo {
+    display: inline-block;
+    min-height: 7rem;
+    background-color: darkgoldenrod;
+    background: url(images/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+.header>.contact-info {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    /* grid-column: 1 / 2; */
+}
+
+.navigation>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation>ul>li {
+    display: inline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+
+/* Hero */
+
+.hero {
+    background: url(images/undraw_Together_re_a8x4.svg);
+    background-position: left;
+    background-size: 30% 80%;
+    background-repeat: no-repeat;
+    padding: 4em 8vw;
+    text-align: right;
+}
+
+
+/* Catalogs */
+
+.catalog-chemicals {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem)); */
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 1rem;
+    grid-template-rows: subgrid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px 1px rgb(133, 133, 133, 0.3);
+    height: 100%;
+}
+
+.card>img {
+    /* width: 100%; */
+    max-height: 15rem;
+    width: auto;
+}
+
+.card>.image {
+    height: 15rem;
+    background-size: cover;
+}
+
+.card>.container {
+    padding: 0.5rem;
+}
+
+.feature-point {
+    margin-top: 2rem;
+    /* background-color: royalblue; */
+    /* color: whitesmoke; */
+    padding: 0.5rem;
+    margin-left: 5em;
+}
+
+.feature-point:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0rem;
+    margin-left: -5rem;
+    background: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj3XfIpf-OOJRCcWz4iN2CU3qMKVVbj0p0bRvKNGVo1U9pk_8ZIlyR8pWreA');
+    background-size: cover;
+}
+
+#feature-point1:before {
+    background: url(images/point-industry.png);
+    background-size: cover;
+}
+
+#feature-point2:before {
+    background: url(images/point-timing.png);
+    background-size: cover;
+}
+
+#feature-point3:before {
+    background: url(images/point-delivary.png);
+    background-size: cover;
+}
+
+#feature-point1 {
+    grid-column: 2 / 3;
+}
+
+#feature-point2 {
+    grid-column: 3 / 4;
+}
+
+#feature-point3 {
+    grid-column: 4 / 5;
+}
+
+
+/* Different screens layouting */
+
+@media only screen and (max-width: 900px) {
+    .header,
+    .navigation,
+    .hero,
+    .chemicals,
+    .fertilizers,
+    .about-the-company,
+    .contact {
+        grid-column: 1 / 6;
+    }
+    #feature-point1 {
+        grid-column: 1 / 6;
+        margin-top: 4rem;
+    }
+    #feature-point2 {
+        grid-column: 1 / 6;
+    }
+    #feature-point3 {
+        grid-column: 1 / 6;
+        margin-bottom: 4rem;
+    }
+}

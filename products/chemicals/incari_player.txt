@@ -1,0 +1,78 @@
+test@irider:~/IncariPlayer# export DISPLAY=:0
+test@irider:~/IncariPlayer# ./run.sh
+/home/root/IncariPlayer/bin/../lib:
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:08.140] Initializing module Incari::Databases::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:08.153] Successfully initialized module Incari::Databases::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:08.155] Initializing module Incari::EngineWrapper::Breeze::Module...
+[breeze][M]["breeze.cpp":17] Initializing BreezeVR...
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture  with key brz_empty_texture.
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture ../assets/textures/rgb_noise.png with key brz_rgb_noise_texture.
+[breeze][M]["breeze.cpp":70] Done!
+[breeze][M]["SharedLibrary.cpp":46] Shared library '../plugins/breeze/libbreeze-assimp.so' loaded successfully!
+[breeze][M]["AssimpPlugin.cpp":18] Initializing plugin breeze-assimp...
+[breeze][M]["AssimpPlugin.cpp":22] Successfully loaded plugin breeze-assimp!
+[breeze][W]["PluginManager.cpp":95] Unable to load plugin 'libbreeze-fbx.so' : None of the provided search paths contains a suitable shared object file.
+[breeze][M]["HTMLModule.cpp":43] Initializing module breeze-html...
+[breeze][M]["HTMLModule.cpp":91] Successfully intitialized module breeze-html!
+[breeze][M]["SkiaModule.cpp":23] Initializing module breeze-SkiaModule...
+[breeze][M]["SkiaModule.cpp":25] Successfully intitialized module breeze-SkiaModule!
+[breeze][M]["GStreamerModule.cpp":21] Initializing module breeze-gstreamer...
+
+DevTools listening on ws://127.0.0.1:8999/devtools/browser/d87dc53a-97a6-4913-a824-36402994a963
+Perform final cleanup before process termination!
+/usr/libexec/gstreamer-1.0/gst-plugin-scanner: symbol lookup error: /usr/libexec/gstreamer-1.0/gst-plugin-scanner: undefined symbol: _gst_executable_path
+
+(IncariPlayer:1440): GStreamer-WARNING **: 09:13:11.003: External plugin loader failed. This most likely means that the plugin loader helper binary was not fou                                                                                                                                                   nd or could not be run. You might need to set the GST_PLUGIN_SCANNER environment variable if your setup is unusual. This should normally not be required though                                                                                                                                                   .
+
+(IncariPlayer:1440): GStreamer-WARNING **: 09:13:11.043: Failed to load plugin '/usr/lib/gstreamer-1.0/libgstvideo4linux2.so': /usr/lib/libgstvideo-1.0.so.0: u                                                                                                                                                   ndefined symbol: gst_aggregator_simple_get_next_time
+[breeze][M]["GStreamerModule.cpp":29] Re register videoconvert module breeze-gstreamer!
+
+(IncariPlayer:1440): GStreamer-WARNING **: 09:13:11.057: Failed to load plugin '/usr/lib/gstreamer-1.0/libgstvideoconvert.so': /usr/lib/libgstvideo-1.0.so.0: u                                                                                                                                                   ndefined symbol: gst_aggregator_simple_get_next_time
+
+(IncariPlayer:1440): GStreamer-WARNING **: 09:13:11.067: Failed to load plugin '/usr/lib/gstreamer-1.0/libgstvideo4linux2.so': /usr/lib/libgstvideo-1.0.so.0: u                                                                                                                                                   ndefined symbol: gst_aggregator_simple_get_next_time
+[breeze][M]["GStreamerModule.cpp":36] Successfully intitialized module breeze-gstreamer!
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.069] Successfully initialized module Incari::EngineWrapper::Breeze::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.071] Initializing module Incari::ScreenManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.074] Successfully initialized module Incari::ScreenManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.076] Initializing module Incari::SceneManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.081] Successfully initialized module Incari::SceneManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.083] Initializing module Incari::ActionManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.086] Successfully initialized module Incari::ActionManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.087] Initializing module Incari::AnimationManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.091] Successfully initialized module Incari::AnimationManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.093] Initializing module Incari::CANManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.095] Successfully initialized module Incari::CANManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.096] Initializing module Incari::TransitionManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.098] Successfully initialized module Incari::TransitionManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.100] Initializing module Incari::HTTPManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.102] Successfully initialized module Incari::HTTPManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.104] Initializing module Incari::InputManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.106] Successfully initialized module Incari::InputManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.107] Initializing module Incari::MQTTManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.109] Successfully initialized module Incari::MQTTManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.111] Initializing module Incari::Logic::Module...
+[W][........Intercom.hpp:0108][2021.09.24 09:13:11.113] [Where: AddEventListener] There is no event with path 'Incari::MainWindow::onPlayerStartPressed'.Check                                                                                                                                                    if it's registered before you are trying to use it.
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.115] Successfully initialized module Incari::Logic::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.116] Initializing module Incari::MaterialManager::Module...
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.118] Successfully initialized module Incari::MaterialManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.120] Initializing module Incari::PlayerApplicationManager::Module...
+[breeze][M]["SharedLibrary.cpp":46] Shared library '../plugins/breeze/libbreeze-glfw.so' loaded successfully!
+[breeze][M]["GlfwPlugin.cpp":21] Initializing plugin breeze-glfw...
+[breeze][M]["WindowManager.cpp":40] Registering creation function for windows of type GlfwWindow.
+[breeze][M]["GlfwPlugin.cpp":41] Registered window type GlfwWindow.
+[breeze][M]["GlfwPlugin.cpp":43] Successfully loaded plugin breeze-glfw!
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.211] Successfully initialized module Incari::PlayerApplicationManager::Module.
+[D][...ModuleManager.cpp:0201][2021.09.24 09:13:11.212] Initializing module Incari::ShadingModelManager::Module...
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture /home/root/IncariPlayer/assets/textures/default.png with key Incari::DefaultTexture.
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture /home/root/IncariPlayer/assets/textures/matte.png with key Incari::DefaultMatte.
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture Incari::ShadingModels::Defaults::CarPaintShadingModel::BRDFLookupTable with key Incari::Shadin                                                                                                                                                   gModels::Defaults::CarPaintShadingModel::BRDFLookupTable.
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture Incari::ShadingModels::Defaults::GlassShadingModel::BRDFLookupTable with key Incari::ShadingMo                                                                                                                                                   dels::Defaults::GlassShadingModel::BRDFLookupTable.
+[breeze][M]["TextureDatabase.hpp":27] TextureBase Adding texture Incari::ShadingModels::Defaults::PBRShadingModel::BRDFLookupTable with key Incari::ShadingMode                                                                                                                                                   ls::Defaults::PBRShadingModel::BRDFLookupTable.
+[breeze][M]["MaterialDatabase.hpp":26] Adding material Default Car Paint Model.
+[breeze][M]["MaterialDatabase.hpp":26] Adding material Default Glass Model.
+[breeze][M]["MaterialDatabase.hpp":26] Adding material Default PBR Model.
+[breeze][M]["MaterialDatabase.hpp":26] Adding material Default Phong Model.
+[breeze][M]["MaterialDatabase.hpp":26] Adding material Default Shadeless Model.
+[D][...ModuleManager.cpp:0206][2021.09.24 09:13:11.490] Successfully initialized module Incari::ShadingModelManager::Module.
+Application::Start
+[D][.........Network.cpp:0267][2021.09.24 09:13:11.502] Intercom gateway listening on port 57499.
