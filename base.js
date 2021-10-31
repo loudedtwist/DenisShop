@@ -50,13 +50,17 @@ function generateCards(products, cardTemplate, catalogContainer) {
 
         var clone = document.importNode(cardTemplate.content, true); // where true means deep copy
         if (clone.childElementCount > 0) {
-            console.log(clone.firstElementChild);
+            clone.firstElementChild.dataset.name = product.name;
+            clone.firstElementChild.dataset.description = product.description;
+            clone.firstElementChild.dataset.image = product.image;
+            clone.firstElementChild.dataset.full_description = product.full_description;
+            clone.firstElementChild.dataset.active_substance = product.active_substance;
             clone.firstElementChild.addEventListener('click', function(event) {
-                console.log(event);
-                console.log(event.srcElement);
-                console.log(event.srcElement.closest('.card'));
-                // go to parrent until class found
-                openNav(event)
+                var clickedCard = event.srcElement.closest('.card');
+                if (!clickedCard) {
+                    console.error("Clicked card not found");
+                }
+                openNav(clickedCard ? clickedCard : event.srcElement);
             });
         }
         catalogContainer.appendChild(clone);

@@ -254,4 +254,13 @@ html {
         grid-column: 1 / 6;
         margin-bottom: 4rem;
     }
+    .contact.address {
+        grid-column: 1 / 3;
+    }
+    .contact.phone {
+        grid-column: 3 / 6;
+    }
+    .contact.internet {
+        grid-column: 1 / 6;
+    }
 }
