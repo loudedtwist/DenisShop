@@ -92,7 +92,7 @@ html {
 /* Hero */
 
 .hero {
-    background: url("/images/undraw_Together_re_a8x4.svg");
+    background: url("../images/undraw_Together_re_a8x4.svg");
     background-position: left;
     background-size: 30% 80%;
     background-repeat: no-repeat;
@@ -159,17 +159,17 @@ html {
 }
 
 #feature-point1:before {
-    background: url("/images/point-industry.png");
+    background: url("../images/point-industry.png");
     background-size: cover;
 }
 
 #feature-point2:before {
-    background: url("/images/point-timing.png");
+    background: url("../images/point-timing.png");
     background-size: cover;
 }
 
 #feature-point3:before {
-    background: url("/images/point-delivary.png");
+    background: url("../images/point-delivary.png");
     background-size: cover;
 }
 
