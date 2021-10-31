@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: IgraSans;
-    src: url(../fonts/IgraSans.otf);
+    src: url("/fonts/IgraSans.otf");
 }
 
 
@@ -51,7 +51,7 @@ html {
     display: inline-block;
     min-height: 7rem;
     background-color: darkgoldenrod;
-    background: url(/images/Logo.svg);
+    background: url("/images/Logo.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -92,7 +92,7 @@ html {
 /* Hero */
 
 .hero {
-    background: url(/images/undraw_Together_re_a8x4.svg);
+    background: url("/images/undraw_Together_re_a8x4.svg");
     background-position: left;
     background-size: 30% 80%;
     background-repeat: no-repeat;
@@ -159,17 +159,17 @@ html {
 }
 
 #feature-point1:before {
-    background: url(/images/point-industry.png);
+    background: url("/images/point-industry.png");
     background-size: cover;
 }
 
 #feature-point2:before {
-    background: url(/images/point-timing.png);
+    background: url("/images/point-timing.png");
     background-size: cover;
 }
 
 #feature-point3:before {
-    background: url(/images/point-delivary.png);
+    background: url("/images/point-delivary.png");
     background-size: cover;
 }
 
