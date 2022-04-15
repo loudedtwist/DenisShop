@@ -132,7 +132,7 @@ p {
 .card {
     background: white;
     border-radius: 0.4rem;
-    box-shadow: 0px 2px 2rem 1px rgb(133, 133, 133, 0.2);
+    box-shadow: 0px 2px 2rem 1px rgb(133, 133, 133, 0.15);
     height: 100%;
 }
 
@@ -149,7 +149,15 @@ p {
 }
 
 .card>.container {
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+.card>.container>h4 {
+    color: rgb(0, 0, 0);
+}
+
+.card>.container>p {
+    color: rgb(59, 59, 59);
 }
 
 .feature-point {
